@@ -1,0 +1,9 @@
+;;; emms history -*- mode: emacs-lisp; coding: utf-8; -*-
+(
+;; active playlist
+" *EMMS Playlist*"
+;; playlists: ((BUFFER_NAME SELECT_POSITION TRACKS) ...)
+((" *EMMS Playlist*" 1 ((*track* (type . file) (name . "/home/josh/Music/japanese/Boys Love Rap ? Kaguya-Sama? Love Is War -Ultra Romantic- [piGuCMs_qok].mp3") (info-mtime 25223 32948 0 0) (last-played 25562 47271 362361 485000) (play-count . 3)))))
+;; play method
+((emms-repeat-track) (emms-repeat-playlist))
+)

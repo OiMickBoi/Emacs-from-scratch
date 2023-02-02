@@ -58,30 +58,27 @@
 (use-package command-log-mode)
 ;; =========================================== LINE NUMBER ================================================
 ;; Global Regular
-(global-display-line-numbers-mode) 
+ (global-display-line-numbers-mode -1) 
 
-;; Relative
-(defvar my-linum-current-line-number 0) 
+;; ;; Relative
+(defvar my-linum-current-line-number 0)
 
 (setq linum-format 'my-linum-relative-line-numbers)
 
-(defun my-linum-relative-line-numbers (line-number)
-  (let ((test2 (- line-number my-linum-current-line-number)))
-    (propertize
-     (number-to-string (cond ((<= test2 0) (* -1 test2))
-                             ((> test2 0) test2)))
-     'face 'linum)))
+(defun my-linum-relative-line-numbers (line-number) (let ((test2 (-
+  line-number my-linum-current-line-number))) (propertize
+  (number-to-string (cond ((<= test2 0) (* -1 test2)) ((> test2 0)
+  test2))) 'face 'linum)))
 
-(defadvice linum-update (around my-linum-update)
-  (let ((my-linum-current-line-number (line-number-at-pos)))
-    ad-do-it))
-(ad-activate 'linum-update)
+(defadvice linum-update (around my-linum-update) (let
+  ((my-linum-current-line-number (line-number-at-pos))) ad-do-it))
+  (ad-activate 'linum-update)
 
 (global-linum-mode t)
 ;; =========================================== EVIL MODE =============================================
 ;;; UNDO
 ;; Vim style undo not needed for emacs8
-(use-package undo-fu)
+;;(use-package undo-fu)
 
 ;;; VIM BINDINGS
 (use-package evil
@@ -94,11 +91,11 @@
   ;; no vim insert bindings
   (setq evil-undo-system 'undo-fu)
   :config
-  (evil-mode 1))
+  (evil-mode -1))
 
 ;; org mode
-(add-to-list 'load-path "/path/to/org-evil/directory")
-(require 'org-evil)
+;(add-to-list 'load-path "/path/to/org-evil/directory")
+;(require 'org-evil)
 
 ;; =========================================== ORG MODE =================================================
 (use-package org-bullets
@@ -188,16 +185,16 @@
 
  (global-set-key (kbd "C-M-j") 'counsel-switch-buffer)
 ;; =========================================== WEB-DEV ==================================================
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags 
-  '((js-mode  "<script[^>]*>" "</script>")
-    (css-mode "<style[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("htm" "html" "phtml"))
-(multi-web-global-mode 1)
+;; (require 'multi-web-mode)
+;; (setq mweb-default-major-mode 'html-mode)
+;; (setq mweb-tags 
+;;   '((js-mode  "<script[^>]*>" "</script>")
+;;     (css-mode "<style[^>]*>" "</style>")))
+;; (setq mweb-filename-extensions '("htm" "html" "phtml"))
+;; (multi-web-global-mode 1)
 
 ;; =========================================== Dired ==================================================
-(ranger-override-dired-mode t)
+;(ranger-override-dired-mode t)
 ;; =========================================== Java IDE =====================================================
 (use-package projectile)
 (use-package flycheck)
@@ -236,7 +233,7 @@
  '(jdee-db-spec-breakpoint-face-colors (cons "#000000" "#3f3f3f"))
  '(objed-cursor-color "#C16069")
  '(package-selected-packages
-   '(helm-lsp lsp-java lsp-ui company hydra lsp-mode yasnippet flycheck projectile org-pdfview pdf-tools ranger emms modus-themes doom-themes all-the-icons helpful rainbow-delimiters command-log-mode doom-modeline ivy tabbar-ruler mode-icons powerline tabbar undo-fu evil use-package cmake-mode))
+   '(helm-lsp lsp-java lsp-ui company hydra lsp-mode yasnippet flycheck projectile org-pdfview pdf-tools emms modus-themes doom-themes all-the-icons helpful rainbow-delimiters command-log-mode doom-modeline ivy tabbar-ruler mode-icons powerline tabbar undo-fu evil use-package cmake-mode))
  '(pdf-view-midnight-colors (cons "#eceff4" "#323334"))
  '(rustic-ansi-faces
    ["#323334" "#C16069" "#A2BF8A" "#ECCC87" "#80A0C2" "#B58DAE" "#86C0D1" "#eceff4"])

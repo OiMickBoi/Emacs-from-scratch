@@ -1,0 +1,21 @@
+* Lesson 1
+** Part 1 Introducing the series and setting up the package manager
+  - Show Melpa
+  - Set up Melpa
+  - Show Melpa
+  - Set up Melpa
+** Part 2 Installing Packages
+  - Installed use-package
+  - Installed try
+  - Installed which-key
+  - Installed use-package
+  - Installed try
+  - Installed which-key
+* Lesson 2
+Show some org-mode
+  - review init.el
+  - set up README.org
+* Links
+  - [[file:init.el][Link to config file]]
+  - 
+  

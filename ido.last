@@ -1,0 +1,39 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/josh/Projects/" . "Homework1/")
+ ("/home/josh/" . ".config/")
+ ("/home/" . "josh/")
+ ("/home/josh/.config/" . "emacs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/josh/.config/emacs/"
+ "/home/josh/Projects/Homework1/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "ido.last"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/josh/.config/emacs/" (25514 12392 400471 120000) "init.el~" "init.el.old~" "README.org" "../" "elpa/" "./" "url/" "ido.last~" "ido.last" "init.el" "init.el.old" "README.org~" "auto-save-list/")
+
+ ("/home/josh/Projects/Homework1/" (25514 5083 651864 88000) "PlayerGenerator.class" "CacheTest.java.old" "CacheTest.java.old1" "Cache.class" ".git/" "#CacheTest.java#" "out4" "../" "CacheTest.class" "Player.class" "Cache.java" "Player-List100000.data" "out5" "run-tests.sh" "test-cases/" "./" "Player-List50.data" ".vscode/" "out1" ".CacheTest.java.swp" "out3" "out2" "CacheTest.java" "README.md" "p1-rubric.txt" "Player.java" "out6" "PlayerGenerator.java" "Player-List1000.data" "mytests/" ".gitignore")
+
+ ("/home/josh/Projects/" (25499 50937 707810 329000) "CS-HU310-FinalProject/" "proj2/" "HackerRank/" "pdfPython/" "Homework1/" ".cs331lab6.c.swp" "../" "Project3_Experiments_with_Hashing_/" "StockBot/" "CS321-003-f22-team-09/" "Journal.org" "CS321-Project-2-Stardew-Valley/" "./" "Homework2/" "ece/" "ECE/" "Junk.java" "Star/" "Stardew-Valley/" "CS321-FinalProject.old/" "convert_to_grade_point.sql" "cs331lab6.c" "webdev/" "TextAdventureGame/" "Project3_Experiments_with_Hashing/" "pdfpython.py" "bsu-cs-hu-310-final-project-template/" "gitBasics/")
+
+ ("/home/" (25358 54556 591004 219000) "josh/" "../" "./")
+
+ ("/home/josh/.config/" (25514 6402 25159 786000) "user-dirs.dirs" "libreoffice/" "xviewer/" "jgit/" "nitrogen/" "gtk-2.0/" "ranger/" "Code/" "zoomus.conf" "autostart/" "user-dirs.locale" "glib-2.0/" "../" "kitty/" "procps/" "TabNine/" "ibus/" "JetBrains/" "evolution/" "dconf/" "qutebrowser/" "./" "Thunar/" "caja/" "hexchat/" "cef_user_data/" "neofetch/" "celluloid/" "mpd/" "awesome/" "emacs/" "mpv/" "xfce4/" "xed/" "warpinator/" "nyxt/" "fish/" "pulse/" "gtk-3.0/" "qt5ct/" "mimeapps.list" "enchant/")
+
+ ("/home/josh/" (25514 3613 177837 134000) ".swn" ".vim/" ".thunderbird/" ".bashrc" ".jetbrains/" ".bash_history" ".jdks/" "eclipse-workspace/" "Latex2/" ".swm" "271/" ".viminfo" "Templates/" "joshboyle@onyx/" ".mozilla/" ".swo" ".zoom/" "Videos/" ".lesshst" "..emacs.~undo-tree~" ".dmrc" "intellijWorkspace/" ".android/" "hwlatex" "Downloads/" ".emacs.d.new./" ".selected_editor" "snap/" ".screenlayout/" ".texlive2021/" "../" "Warpinator/" ".java/" ".emacs.old" ".emacs.d.old/" ".swt/" "Latin/" ".mysql/" "Desktop/" "bookreport.txt" "pokewilds-v0.8.7-linux-64/" ".gtkrc-xfce" ".cache/" "./" ".xsession-errors.old" ".wget-hsts" "TestPrep/" ".bin/" "PycharmProjects/" ".TabNine/" ".vscode/" ".local/" "Public/" ".config/" ".gnupg/" "Projects/" ".ICEauthority" "Notes/" ".profile" ".Xauthority" ".xsession-errors" ".var/" "Writing/" ".gtkrc-2.0" ".bash_logout" "Journals/" ".m2/" ".emacs~" ".ssh/" ".surf/" ".gradle/" "Ideas/" ".tabnine/" "mpv-shot0001.jpg" "eclipse-workspace1/" ".joinnow/" ".swp" "README.md" ".w3m/" ".gphoto/" ".doom.d/" ".pki/" "kpop.org" "java_error_in_idea_13765.log" "Documents/" ".eclipse/" ".linuxmint/" ".xmodmap" "Git_Repos/" "Pictures/" "java_error_in_idea_.hprof" ".sudo_as_admin_successful" "Latex/" "links" ".p2/" "Music/" ".gitconfig" "suckless/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

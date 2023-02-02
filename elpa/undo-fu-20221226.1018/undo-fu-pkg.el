@@ -1,0 +1,2 @@
+;;; Generated package description from undo-fu-20221226.1018/undo-fu.el  -*- no-byte-compile: t -*-
+(define-package "undo-fu" "20221226.1018" "Undo helper with redo" '((emacs "25.1")) :commit "dc1b2720cbaa94ac7c34bd0ba6b656ff81de929f" :authors '(("Campbell Barton" . "ideasman42@gmail.com")) :maintainer '("Campbell Barton" . "ideasman42@gmail.com") :url "https://codeberg.org/ideasman42/emacs-undo-fu")

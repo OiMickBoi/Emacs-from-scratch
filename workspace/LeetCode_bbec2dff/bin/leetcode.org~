@@ -1,0 +1,44 @@
+* 1. Two Sum
+** Brute Force Version
+#+BEGIN_SRC java
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int [] indexArr = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i+1; j < nums.length; j++) {
+                int sum = nums[i] + nums[j];
+
+                if ((sum == target)) {
+                    indexArr[0] = i;
+                    indexArr[1] = j;
+                }
+            }
+        }
+        return indexArr;
+    }
+}
+#+END_SRC java
+** HashMap Version
+
+*** In class version
+#+BEGIN_SRC java
+import java.util.HashMap;
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+	HashMap<Integer, Integer> m = new HashMap<>();
+        for(int i = 0; i < nums.length; i++) {
+            if(m.containsKey(nums[i])){
+                return new int[] {m.get(nums[i]), i};
+            }
+            m.put(target-nums[i], i);
+        }
+	return new int[2];
+    }
+}
+#+END_SRC java
+
+
+* 88. Merge Sorted Array
+#+BEGIN_SRC java
+#+END_SRC java
